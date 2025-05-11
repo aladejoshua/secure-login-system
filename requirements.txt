@@ -7,31 +7,3 @@ cryptography==41.0.4
 python-dotenv==1.0.0
 pytest==7.4.2
 bandit==1.7.5
-
-# Git ignore file (e.g., *.pyc, .env, database.db)
-# Python
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-.Python
-*.egg-info/
-pip_log.txt
-
-# Environment
-.env
-*.env
-
-# Database
-instance/database.db
-
-# Logs
-logs/
-*.log
-
-# IDE/Editor files
-.vscode/
-
-# System files
-.DS_Store
-Thumbs.db
