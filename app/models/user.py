@@ -1,0 +1,1 @@
+# User model (defines users table schema)

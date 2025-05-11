@@ -1,0 +1,10 @@
+Python dependencies
+    - flask
+    - flask-sqlalchemy
+    - flask-wtf
+    - bcrypt
+    - pyotp
+    - cryptography
+    - python-dotenv
+    - pytest
+    - bandit
