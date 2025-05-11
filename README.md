@@ -1,4 +1,3 @@
-Create a virtual environment: python -m venv venv and activate it (source venv/bin/activate or venv\Scripts\activate).
 Install libraries: pip install flask bcrypt pyotp cryptography sqlalchemy pytest.
 
 To-Do List
