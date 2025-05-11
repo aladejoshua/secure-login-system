@@ -1,5 +1,3 @@
-Install libraries: pip install flask bcrypt pyotp cryptography sqlalchemy pytest.
-
 To-Do List
 1. Plan the Project
 
