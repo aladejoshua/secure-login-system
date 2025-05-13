@@ -1,7 +1,7 @@
 # Initialize Flask app, configure extensions
 # app/__init__.py
 import os
-from flask import Flask
+from flask import Flask, render_template
 
 def create_app():
     app = Flask(__name__)
@@ -12,6 +12,6 @@ def create_app():
     # Register routes (you can modularize this later)
     @app.route('/')
     def home():
-        return 'Hello, Flask!'
+        return render_template('register.html')
 
     return app
