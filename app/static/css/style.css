@@ -1,1 +1,76 @@
 /* CSS for styling */
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    text-align: center;
+}
+
+.container h1 {
+    margin-bottom: 5px;
+    font-size: 28px;
+}
+
+.container p {
+    margin-bottom: 25px;
+    font-size: 14px;
+    color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px 12px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background-color: transparent;
+    font-size: 16px;
+    outline: none;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-bottom: 2px solid #3f51b5;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #5a5a5a;
+}
+
+.remember {
+    margin-top: 15px;
+    font-size: 14px;
+    text-align: left;
+}
+
+.remember input[type="checkbox"] {
+    margin-right: 6px;
+}
