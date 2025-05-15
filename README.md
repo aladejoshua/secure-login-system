@@ -1,9 +1,4 @@
 To-Do List
-1. Plan the Project
-
- * List features: registration, login, 2FA, password hashing, session security.
- * Learn basics of secure passwords (bcrypt) and 2FA (pyotp).
-
 2. Build User Registration
 
  * Set up SQLite database with a users table (username, hashed password, email, 2FA secret).
