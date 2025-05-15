@@ -23,9 +23,12 @@
             <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
 
             <div class="button">
+                <a href="">
                 <button type="submit-btn">Sign Up</button>
+                </a>
             </div>
             <p>Already have an account?<a href="{{ url_for('auth.login') }}">Login</a>.</p>
+            <p>Use 2FA<a href="{{ url_for('auth.tfa') }}">Login</a>.</p>
         </div>
     </form>
  </body>
