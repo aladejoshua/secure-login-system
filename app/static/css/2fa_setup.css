@@ -8,6 +8,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
+    overflow: hidden;
 }
 
 .auth-container {
@@ -35,6 +36,7 @@ body {
 .auth-container .icon {
   margin-bottom: 15px;
 }
+
 
 /* Header */
 .auth-container h2 {

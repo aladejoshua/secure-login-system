@@ -11,9 +11,13 @@ def login():
 def register():
     return render_template('register.html')
 
-@auth_bp.route('/2fa_setup.html')
+@auth_bp.route('/2fa_setup')
 def tfa ():
     return render_template('2fa_setup.html')
+
+@auth_bp.route('/2fa_verfiy')
+def tfa_v ():
+    return render_template('2fa_verify.html')
 
 @auth_bp.route('/dashboard')
 def dashboard ():
