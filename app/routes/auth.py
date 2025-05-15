@@ -14,3 +14,7 @@ def register():
 @auth_bp.route('/2fa_setup.html')
 def tfa ():
     return render_template('2fa_setup.html')
+
+@auth_bp.route('/dashboard')
+def dashboard ():
+    return render_template('dashboard.html')

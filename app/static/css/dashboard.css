@@ -7,7 +7,7 @@
 
 body, html {
   height: 100%;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'poppins';
   background-color: #fff;
 }
 
@@ -47,7 +47,7 @@ body, html {
 }
 
 .main-content h1 {
-  font-size: 36px;
+  font-size: 66px;
   color: #007bff;
   letter-spacing: 6px;
   font-weight: 600;
