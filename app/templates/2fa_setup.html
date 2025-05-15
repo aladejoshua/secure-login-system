@@ -1,1 +1,48 @@
 <!-- QR code for 2FA setup -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2FA SETUP</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/2fa_setup.css') }}">
+ </head>
+ <body>
+    
+    <form>
+        <div class="auth-container">
+            <div class="close-btn">&times;</div>
+            <dotlottie-player
+  src="https://lottie.host/3122eac4-a8f3-4137-b2ff-3bc0458ebb27/hhJXXi42Az.lottie"
+  background="transparent"
+  speed="1"
+  style="width: 300px; height: 300px"
+  loop
+  autoplay
+></dotlottie-player>
+            <h1>Authenticate your account</h1>
+            <p>Please confirm your account by entering the code sent to your email</p>
+
+            <div class="otp-inputs">
+    <input type="text" maxlength="1" />
+    <input type="text" maxlength="1" />
+    <input type="text" maxlength="1" />
+    <input type="text" maxlength="1" />
+    <input type="text" maxlength="1" />
+    <input type="text" maxlength="1" />
+  </div>
+  <div class="info-text">It may take a minute to receive your code.</div>
+  <div class="resend">Haven't received it? <a href="#">Resend a new code</a>.</div>
+  <button class="submit-btn">Submit</button>
+</div>
+            </div>
+        </div>
+    </form>
+
+    <script
+  src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+  type="module"
+></script>
+
+ </body>
+ </html>
