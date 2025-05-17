@@ -1,22 +1,23 @@
-# Initialize Flask app, configure extensions
-# app/__init__.py
 import os
-from flask import Flask, render_template, redirect, url_for, request
+from flask import Flask, render_template
 from app.routes.auth import auth_bp
+from flask_sqlalchemy import SQLAlchemy
+from .config import Config
+
+db = SQLAlchemy()
 
 def create_app():
     app = Flask(__name__)
 
-    # Basic configuration (optional)
-    app.config['SECRET_KEY'] = os.getenv('SECRET_KEY')  # Replace with a secure key
-
-    # Register routes (you can modularize this later)
-    
     app.register_blueprint(auth_bp)
+    app.config.from_object(Config)
+    db.init_app(app)
+
     @app.route('/')
     def home():
         return render_template('register.html')
-     
+    
+    # Create database tables if they don't exist
+    with app.app_context():
+        db.create_all()
     return app
-
-
